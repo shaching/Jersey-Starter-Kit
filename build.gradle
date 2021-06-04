@@ -1,0 +1,26 @@
+plugins {
+    id 'eclipse-wtp'
+}
+
+allprojects {
+    // https://docs.gradle.org/current/dsl/org.gradle.api.tasks.javadoc.Javadoc.html
+    tasks.withType(Javadoc) {
+        options.encoding = 'UTF-8'
+    }
+
+    // https://docs.gradle.org/current/dsl/org.gradle.api.tasks.compile.JavaCompile.html
+    tasks.withType(JavaCompile) {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+        options.encoding = 'UTF-8'
+    }
+
+    // https://docs.gradle.org/current/dsl/org.gradle.api.tasks.Copy.html
+    tasks.withType(Copy) {
+        duplicatesStrategy = DuplicatesStrategy.INCLUDE
+    }
+
+    repositories {
+        mavenCentral()
+    }
+}

@@ -1,0 +1,9 @@
+plugins {
+    id 'java-library'
+}
+
+dependencies {
+    implementation group: 'org.glassfish.jersey.containers', name: 'jersey-container-servlet', version: '2.34'
+
+    implementation project(":logger")
+}

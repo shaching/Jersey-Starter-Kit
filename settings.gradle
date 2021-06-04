@@ -1,0 +1,6 @@
+rootProject.name = 'Jersey-Start-Kit'
+
+include('app')
+include('errorcode')
+include('logger')
+include('models')
