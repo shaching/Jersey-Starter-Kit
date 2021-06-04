@@ -1,4 +1,4 @@
-# Jersey-Start-Kit
+# Jersey-Starter-Kit
 
 
 # License

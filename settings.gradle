@@ -1,4 +1,4 @@
-rootProject.name = 'Jersey-Start-Kit'
+rootProject.name = 'Jersey-Starter-Kit'
 
 include('app')
 include('errorcode')
